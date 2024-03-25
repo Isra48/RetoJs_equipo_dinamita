@@ -1,0 +1,62 @@
+.populartags_container{
+    padding: 0em 1em;
+    width: 250px;
+    height: 300px;
+    overflow: auto;
+  
+
+
+    .list{
+        list-style: none;
+        padding: 0.5em 1em;
+        color: #c3c3c3;
+      
+        margin-top: .1em;       
+        font-size: 14pt; 
+        border-radius: 8px;
+     
+        cursor: pointer ;
+
+        a{
+            color: #404040;
+            opacity: 0.8;
+        }
+
+        
+        
+
+        .linkHover{
+           
+            word-spacing: 5px;
+            text-decoration: none;
+            color: inherit; 
+            cursor: pointer;
+          
+        
+           
+          
+           
+            
+            
+        }
+    
+      
+       
+
+        svg{
+         
+            width: 24px;
+           
+        }
+    }
+    .list:hover{
+        background-color:#e2e3f3 ;
+        color: #2f3ab2;
+        text-decoration: underline;
+
+    }
+
+
+
+
+}

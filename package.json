@@ -1,0 +1,11 @@
+{
+    "name": "dev.to",
+    "version": "1.0.0",
+    "scripts": {
+      "sass": "sass src/estilos/estilos.scss:dist/estilos.css --watch"
+    },
+    "devDependencies": {
+      "sass": "^1.43.4"
+    }
+  }
+  
