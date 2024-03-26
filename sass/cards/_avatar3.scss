@@ -1,0 +1,14 @@
+.avatar{
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+    width: 32px;
+
+    .avatar3 {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+}
