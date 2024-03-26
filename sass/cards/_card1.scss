@@ -1,64 +1,119 @@
 .card1 {
-    
-    overflow: hidden;
-    border-radius: 10px;
-    margin-top: 10px;
-    
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 10px;
 
-    .imgPost {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
+  .imgPost {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 .card2 {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
 
-    .usersCard {
-        gap: 10px;
-        margin-bottom: 15px;
+  .usersCard {
+    gap: 10px;
+    margin-bottom: 15px;
 
-        .userInfo {
-            a {
-                border-radius: 5px;
-                padding: 5px 0px;
-                color: rgb(31, 31, 31);
-                text-decoration: none;
-                font-weight: $bold_text;
-
-                &:hover {
-                    color: black;
-                    background-color: rgba(128, 128, 128, 0.274);
-                }
-            }
-
-            span {
-                font-size: 12px;
-                color: rgb(68, 67, 67);
-            }
-        }
-    }
-
-    .cardTitle {
-        margin-bottom: 15px;
-
-        h2 {
-            font-size: 30px;
-            font-weight: $bold_text;
-        }
+    .userInfo {
+      a {
+        border-radius: 5px;
+        padding: 5px 0px;
+        color: rgb(31, 31, 31);
+        text-decoration: none;
+        font-weight: $bold_text;
 
         &:hover {
-            color: rgba(45,58,178);
-            cursor: pointer;
+          color: black;
+          background-color: rgba(128, 128, 128, 0.274);
         }
-    }
-    
+      }
 
-    #padding {
-        padding-left: 40px;
+      span {
+        font-size: 12px;
+        color: rgb(68, 67, 67);
+      }
     }
+  }
+
+  .cardTitle {
+    margin-bottom: 15px;
+
+    h2 {
+      font-size: 30px;
+      font-weight: $bold_text;
+    }
+
+    &:hover {
+      color: rgba(45, 58, 178);
+      cursor: pointer;
+    }
+  }
+
+  #padding {
+    padding-left: 40px;
+  }
+}
+
+.post {
+  input,
+  textarea {
+    outline: none;
+  }
+
+  h1 {
+    margin: 0px;
+    font-weight: 500;
+  }
+
+  #Autor,
+  #school {
+    display: inline-block;
+    padding: 15px;
+    margin: 10px 0px;
+    width: 49%;
+    height: 20px;
+    border: none;
+    border-radius: 20px;
+    background: #d0dfe8;
+  }
+  #Titulo {
+    display: inline-block;
+    padding: 15px;
+    margin: 5px auto;
+    width: 99%;
+    height: 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #d0dfe8;
+  }
+  #text-post {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    resize: none;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 4px solid #122df3;
+    background: #122df3;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+  button:hover {
+    background: #2bc9d0;
+  }
 }

@@ -223,8 +223,7 @@ body {
 }
 
 .cls-2 {
-  -webkit-clip-path: url(#clippath);
-          clip-path: url(#clippath);
+  clip-path: url(#clippath);
 }
 
 .cls-3 {
@@ -271,9 +270,6 @@ nav .navLogo input {
   display: none;
   border-radius: 9px;
   padding-left: 10px;
-}
-nav .navLogo input::-moz-placeholder {
-  font-size: 15px;
 }
 nav .navLogo input::placeholder {
   font-size: 15px;
@@ -516,8 +512,7 @@ nav .navLogo input::placeholder {
 .card1 .imgPost {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .card2 {
@@ -557,6 +552,60 @@ nav .navLogo input::placeholder {
 }
 .card2 #padding {
   padding-left: 40px;
+}
+
+.post input,
+.post textarea {
+  outline: none;
+}
+.post h1 {
+  margin: 0px;
+  font-weight: 500;
+}
+.post #Autor,
+.post #school {
+  display: inline-block;
+  padding: 15px;
+  margin: 10px 0px;
+  width: 49%;
+  height: 20px;
+  border: none;
+  border-radius: 20px;
+  background: #d0dfe8;
+}
+.post #Titulo {
+  display: inline-block;
+  padding: 15px;
+  margin: 5px auto;
+  width: 99%;
+  height: 20px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: #d0dfe8;
+}
+.post #text-post {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+.post button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+  border-bottom: 4px solid #122df3;
+  background: #122df3;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.post button:hover {
+  background: #2bc9d0;
 }
 
 .avatar {
@@ -638,4 +687,4 @@ nav .navLogo input::placeholder {
   .container {
     width: 100%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
