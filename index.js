@@ -1,3 +1,12 @@
+/// importaciones ///
+import { renderPost } from "./render_post.js";
+
+
+
+
+
+
+renderPost()
 
 //funcion del btn//
 document.getElementById('btn').addEventListener('click', function() {
@@ -44,8 +53,10 @@ localStorageData.push(post)
 
 // Guardar array actualizado en localStorage
 localStorage.setItem('data', JSON.stringify(localStorageData));
+location.reload()
 
 console.log('datos local storage', localStorageData)
+
 
 
 
