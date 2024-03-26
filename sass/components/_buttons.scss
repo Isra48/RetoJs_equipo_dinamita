@@ -1,0 +1,58 @@
+
+.mainButtons {
+    border: 1.5px solid $button_color;
+    border-radius: 0.375rem;
+    background-color: white;
+  
+    a {
+
+      color: $button_color;
+      font-size: 15px;
+
+      font-weight: $bold_text;
+      text-decoration: none;
+    }
+  
+    &:hover,
+    &:hover a{
+      background-color: $button_color;
+      color: white;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+}
+
+.loginButton {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 100px;
+    height: 80%;
+    margin-right: 5px;
+    border-radius: 0.375rem;
+    background-color: white;
+    border: none;
+    text-decoration: none;
+    border: none;
+    color: rgb(133, 133, 133);
+
+
+    &:hover{
+      background-color: rgb(221, 224, 250);
+      color: $button_color;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+}
+
+.save{
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color:white;
+  &:hover{
+      cursor: pointer;
+      background-color: rgb(247, 247, 247);
+  }
+}

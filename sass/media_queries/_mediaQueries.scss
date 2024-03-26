@@ -1,0 +1,51 @@
+@media screen and (min-width: 767px) {
+    
+    nav {
+        padding: 0 10%;
+    }
+   
+    nav .navLogo input {
+        display: block;
+    }
+
+    nav .createAccount {
+        gap: 0px;
+
+        svg {
+            display: none;
+        }
+    }
+
+    .loginButton {
+        display: flex;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .reactionsBackground {
+        a {
+            display: block;
+
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .aside1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1024px){
+
+    #derecha{
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+}

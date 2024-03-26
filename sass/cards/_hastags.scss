@@ -1,0 +1,111 @@
+.hashtags {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    div {
+        .hTextG {
+
+            .hColorG {
+                color: green;
+                text-decoration: none;
+                
+            }
+
+            &:hover {
+                background-color: rgba(0, 128, 0, 0.050);
+                outline: 1px solid rgba(0, 128, 0, 0.400);
+                transition: background-color 200ms ease;
+            }
+        }
+
+        .hTextP {
+
+            .hColorP {
+                color: purple;
+                text-decoration: none;
+
+            }
+
+            &:hover {
+                background-color: rgba(128, 0, 128, 0.050);
+                outline: 1px solid rgba(128, 0, 128, 0.400);
+                transition: background-color 200ms ease;
+            }
+        }
+
+        .hTextB {
+
+            .hColorB {
+                color: blue;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 255, 0.050);
+                outline: 1px solid rgba(0, 0, 255, 0.400);
+                transition: background-color 200ms ease;
+            }
+        }
+
+        .hTextR {
+
+            .hColorR {
+                color: red;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background-color: rgba(255, 0, 0, 0.050);
+                outline: 1px solid rgba(255, 0, 0, 0.400);
+                transition: background-color 200ms ease;
+            }
+
+        }
+
+        .hTextC {
+
+            .hColorC {
+                color: brown;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background-color: rgba(128, 64, 0, 0.050);
+                outline: 1px solid rgba(165, 42, 42, 0.400);
+                transition: background-color 200ms ease;
+            }
+
+        }
+
+        .hTextY {
+
+            .hColorY {
+                color: yellow;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background-color: rgba(251, 255, 0, 0.050);
+                outline: 1px solid rgba(255, 255, 0, 0.400);
+                transition: background-color 200ms ease;
+            }
+
+        }
+
+        .hText {
+            text-decoration: none;
+            color: #5B5EAB;
+            padding: 4px 7px;
+            text-transform: lowercase;
+            border-radius: 10px;
+            font-size: 15px;
+
+            &:hover {
+                color: black;
+                transition: color 200px ease;
+            }
+        }
+    }
+}

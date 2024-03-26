@@ -1,0 +1,641 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #F5F5F5;
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 15px;
+  max-width: 1280px;
+  padding: 16px;
+  gap: 20px;
+}
+
+.mainContainer {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hashtags {
+  display: flex;
+  margin-bottom: 15px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.hashtags div .hTextG .hColorG {
+  color: green;
+  text-decoration: none;
+}
+.hashtags div .hTextG:hover {
+  background-color: rgba(0, 128, 0, 0.05);
+  outline: 1px solid rgba(0, 128, 0, 0.4);
+  transition: background-color 200ms ease;
+}
+.hashtags div .hTextP .hColorP {
+  color: purple;
+  text-decoration: none;
+}
+.hashtags div .hTextP:hover {
+  background-color: rgba(128, 0, 128, 0.05);
+  outline: 1px solid rgba(128, 0, 128, 0.4);
+  transition: background-color 200ms ease;
+}
+.hashtags div .hTextB .hColorB {
+  color: blue;
+  text-decoration: none;
+}
+.hashtags div .hTextB:hover {
+  background-color: rgba(0, 0, 255, 0.05);
+  outline: 1px solid rgba(0, 0, 255, 0.4);
+  transition: background-color 200ms ease;
+}
+.hashtags div .hTextR .hColorR {
+  color: red;
+  text-decoration: none;
+}
+.hashtags div .hTextR:hover {
+  background-color: rgba(255, 0, 0, 0.05);
+  outline: 1px solid rgba(255, 0, 0, 0.4);
+  transition: background-color 200ms ease;
+}
+.hashtags div .hTextC .hColorC {
+  color: brown;
+  text-decoration: none;
+}
+.hashtags div .hTextC:hover {
+  background-color: rgba(128, 64, 0, 0.05);
+  outline: 1px solid rgba(165, 42, 42, 0.4);
+  transition: background-color 200ms ease;
+}
+.hashtags div .hTextY .hColorY {
+  color: yellow;
+  text-decoration: none;
+}
+.hashtags div .hTextY:hover {
+  background-color: rgba(251, 255, 0, 0.05);
+  outline: 1px solid rgba(255, 255, 0, 0.4);
+  transition: background-color 200ms ease;
+}
+.hashtags div .hText {
+  text-decoration: none;
+  color: #5B5EAB;
+  padding: 4px 7px;
+  text-transform: lowercase;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.hashtags div .hText:hover {
+  color: black;
+  transition: color 200px ease;
+}
+
+.reactions {
+  justify-content: space-between;
+}
+.reactions a {
+  color: rgb(133, 133, 133);
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+}
+.reactions .reactionsBackground {
+  border-radius: 8px;
+  padding: 4px 12px 4px 8px;
+  /*  a {
+      display: none;
+
+      span {
+          display: none;
+      }
+  } */
+}
+.reactions .reactionsBackground svg {
+  cursor: pointer;
+}
+.reactions .reactionsBackground:hover a {
+  color: black;
+}
+.reactions .reactionsBackground:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+  cursor: pointer;
+}
+.reactions .minRead {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.reactions .minRead span {
+  color: rgb(133, 133, 133);
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.alignCenter {
+  display: flex;
+  align-items: center;
+}
+
+.mainButtons {
+  border: 1.5px solid rgb(59, 73, 223);
+  border-radius: 0.375rem;
+  background-color: white;
+}
+.mainButtons a {
+  color: rgb(59, 73, 223);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.mainButtons:hover, .mainButtons:hover a {
+  background-color: rgb(59, 73, 223);
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.loginButton {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  width: 100px;
+  height: 80%;
+  margin-right: 5px;
+  border-radius: 0.375rem;
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  border: none;
+  color: rgb(133, 133, 133);
+}
+.loginButton:hover {
+  background-color: rgb(221, 224, 250);
+  color: rgb(59, 73, 223);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.save {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+.save:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+
+.cls-1 {
+  fill: none;
+}
+
+.cls-2 {
+  -webkit-clip-path: url(#clippath);
+          clip-path: url(#clippath);
+}
+
+.cls-3 {
+  fill: #fff;
+}
+
+.cls-4 {
+  fill: #0f0f0f;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 56px;
+  max-width: 100%;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 0 16px;
+  background-color: white;
+}
+nav .createAccount {
+  align-items: center;
+  width: 250px;
+  height: 100%;
+  gap: 10px;
+}
+nav .createAccount svg {
+  width: 50px;
+}
+nav .navLogo {
+  align-items: center;
+  gap: 10px;
+}
+nav .navLogo img {
+  align-items: center;
+  width: 44px;
+  height: 36px;
+  gap: 10px;
+}
+nav .navLogo input {
+  width: 420px;
+  height: 36px;
+  border: 1px solid gray;
+  display: none;
+  border-radius: 9px;
+  padding-left: 10px;
+}
+nav .navLogo input::-moz-placeholder {
+  font-size: 15px;
+}
+nav .navLogo input::placeholder {
+  font-size: 15px;
+}
+
+.mainButtons {
+  height: 80%;
+  width: 100%;
+}
+.mainButtons a {
+  font-size: 16px;
+}
+
+.li {
+  align-items: center;
+  gap: 20px;
+  padding-left: 15px;
+}
+.li li {
+  list-style: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.li li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(133, 133, 133);
+}
+.li li a span {
+  color: black;
+  font-weight: 500;
+}
+.li li:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.li li:hover a, .li li:hover a span {
+  color: #2f3ab2;
+}
+
+.aside1 {
+  width: 40%;
+  gap: 10px;
+}
+.aside1 .section1 {
+  background-color: white;
+  padding: 16px;
+  border-radius: 5px;
+  gap: 20px;
+}
+.aside1 .section1 h2 {
+  font-size: 20px;
+}
+.aside1 .section1 h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.aside1 .section1 div {
+  gap: 5px;
+}
+.aside1 .section1 div .mainButtons {
+  width: 100%;
+  height: 40px;
+}
+.aside1 .section1 div .loginButton {
+  width: 100%;
+  height: 40px;
+}
+.aside1 .section2 {
+  padding: 8px 16px;
+}
+.aside1 .section2 .opt {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 8px;
+}
+.aside1 .section2 ul {
+  height: 400px;
+  overflow-y: scroll;
+}
+.aside1 .section2 ul li {
+  list-style: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+.aside1 .section2 ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+}
+.aside1 .section2 ul li:hover {
+  background-color: rgba(59, 73, 223, 0.1019607843);
+  cursor: pointer;
+}
+.aside1 .section2 .link_principal {
+  align-items: center;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.aside1 .section2 .link_principal a {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+}
+.aside1 .section2 .link_principal:hover {
+  background-color: #E2E3F3;
+  cursor: pointer;
+}
+.aside1 .section2 .link_principal:hover a {
+  text-decoration: underline;
+  color: #2f3ab2;
+}
+.aside1 .section4 div a {
+  color: #404040;
+  margin: 2px;
+  padding: 5px;
+  display: inline-block;
+}
+.aside1 .section4 div a:hover {
+  background-color: rgba(59, 73, 223, 0.1019607843);
+  color: #2f3ab2;
+  border-radius: 5px;
+}
+.aside1 .section4 div a svg * {
+  fill: currentColor;
+}
+.aside1 .section5 {
+  gap: 10px;
+  margin-top: 24px;
+}
+.aside1 .section5 p {
+  color: rgb(133, 133, 133);
+}
+.aside1 .section5 p a {
+  text-decoration: none;
+  color: #2f3ab2;
+}
+.aside1 .section5 p a:hover {
+  text-decoration: underline;
+}
+
+#derecha {
+  display: flex;
+  border-bottom: 5px solid lightgrey;
+  gap: 10px;
+}
+#derecha .seccionDerecha {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#derecha .seccionDerecha .titulo-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.185);
+}
+#derecha .seccionDerecha .titulo-header a {
+  text-decoration: none;
+}
+#derecha .seccionDerecha .titulo-header a h4 {
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  padding-bottom: 10px;
+}
+#derecha .seccionDerecha .titulo-header a h4:hover {
+  color: blue;
+}
+#derecha .seccionDerecha .titulo-header p {
+  font-size: 12px;
+  color: rgb(92, 92, 92);
+}
+#derecha .seccionDerecha .tarjeta {
+  padding: 16px;
+  border-bottom: 1px solid lightgrey;
+  cursor: pointer;
+}
+#derecha .seccionDerecha .tarjeta a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+#derecha .seccionDerecha .tarjeta a p {
+  color: rgb(92, 92, 92);
+  margin-bottom: 5px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+#derecha .seccionDerecha .tarjeta .comentario {
+  padding-top: 10px;
+  font-size: 13px;
+  color: rgb(92, 92, 92);
+}
+#derecha .seccionDerecha .tarjeta .yellow {
+  font-size: 15px;
+  color: #9c7800;
+  border-radius: 10px;
+  background-color: #FCD34D;
+  width: 40px;
+  padding: 5px;
+}
+#derecha .seccionDerecha .tarjeta:hover a p {
+  color: blue;
+}
+
+.trending {
+  padding: 0px 10px;
+  border-bottom: 1px solid lightgrey;
+  overflow: hidden;
+}
+.trending .titulo-header h4 {
+  font-weight: 500;
+  padding: 8px 0px;
+}
+.trending .box {
+  width: 100%;
+  background-color: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.trending .box a {
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+  text-transform: capitalize;
+}
+.trending .box:hover {
+  background-color: white;
+}
+.trending .box:hover a {
+  color: rgb(65, 65, 255);
+}
+
+.card1 {
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.card1 .imgPost {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card2 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.card2 .usersCard {
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.card2 .usersCard .userInfo a {
+  border-radius: 5px;
+  padding: 5px 0px;
+  color: rgb(31, 31, 31);
+  text-decoration: none;
+  font-weight: 500;
+}
+.card2 .usersCard .userInfo a:hover {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.274);
+}
+.card2 .usersCard .userInfo span {
+  font-size: 12px;
+  color: rgb(68, 67, 67);
+}
+.card2 .cardTitle {
+  margin-bottom: 15px;
+}
+.card2 .cardTitle h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.card2 .cardTitle:hover {
+  color: rgb(45, 58, 178);
+  cursor: pointer;
+}
+.card2 #padding {
+  padding-left: 40px;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: row;
+  height: 32px;
+  width: 32px;
+}
+.avatar .avatar1 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.avatar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 32px;
+  width: 32px;
+}
+.avatar .avatar2 {
+  position: absolute;
+  right: -30%;
+  bottom: -30%;
+  height: 20px;
+  width: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: row;
+  height: 32px;
+  width: 32px;
+}
+.avatar .avatar3 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+@media screen and (min-width: 767px) {
+  nav {
+    padding: 0 10%;
+  }
+  nav .navLogo input {
+    display: block;
+  }
+  nav .createAccount {
+    gap: 0px;
+  }
+  nav .createAccount svg {
+    display: none;
+  }
+  .loginButton {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .reactionsBackground a {
+    display: block;
+  }
+  .reactionsBackground a span {
+    display: none;
+  }
+  .aside1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #derecha {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

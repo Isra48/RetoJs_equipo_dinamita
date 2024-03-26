@@ -1,0 +1,49 @@
+.reactions {
+    justify-content: space-between;
+   
+
+
+    a {
+        color: $list_color;
+        font-size: 15px;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .reactionsBackground {
+        border-radius: 8px;
+        padding: 4px 12px 4px 8px;
+
+        svg {
+            cursor: pointer;
+        }
+
+
+        &:hover a {
+            color: black;
+        }
+
+        &:hover {
+            background-color: rgba(128, 128, 128, 0.100);
+            cursor: pointer;
+        }
+
+        /*  a {
+            display: none;
+
+            span {
+                display: none;
+            }
+        } */
+    }
+
+    .minRead {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        span {
+            color: $list_color;
+        }
+    }
+}
