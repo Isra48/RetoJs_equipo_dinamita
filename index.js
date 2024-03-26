@@ -3,9 +3,6 @@ import { renderPost } from "./render_post.js";
 
 
 
-
-
-
 renderPost()
 
 //funcion del btn//
@@ -13,16 +10,11 @@ document.getElementById('btn').addEventListener('click', function() {
 ///listeners de cada input///
 const autorValue = document.getElementById('autor').value;
 const tituloValue = document.getElementById('titulo').value;
-
 const parrafoValue = document.getElementById('parrafo').value;
-
 const imgValue = document.getElementById('img').value;
 
 
-
-
-
-///////////acciones al dar click
+//////acciones al dar click
 
 
 
@@ -57,14 +49,11 @@ location.reload()
 
 console.log('datos local storage', localStorageData)
 
-
-
-
- 
-
-
 })
 
+
+
+///// Funcion para seleccionar 
 
 
 
