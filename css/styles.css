@@ -554,11 +554,6 @@ nav .navLogo input::placeholder {
   padding-left: 40px;
 }
 
-.post {
-  /* Removes the clear button from date inputs */
-  /* Removes the spin button */
-  /* Always display the drop down caret */
-}
 .post input,
 .post textarea {
   outline: none;
@@ -567,51 +562,50 @@ nav .navLogo input::placeholder {
   margin: 0px;
   font-weight: 500;
 }
-.post #autor,
-.post #titulo, .post #img {
+.post #Autor,
+.post #school {
   display: inline-block;
   padding: 15px;
   margin: 10px 0px;
   width: 49%;
   height: 20px;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  border-radius: 20px;
+  background: #d0dfe8;
 }
-.post #parrafo {
+.post #Titulo {
+  display: inline-block;
+  padding: 15px;
+  margin: 5px auto;
+  width: 99%;
+  height: 20px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: #d0dfe8;
+}
+.post #text-post {
   display: block;
-  font-size: 1em;
   width: 100%;
   padding: 15px;
   border: none;
   outline: none;
   resize: none;
 }
-.post input[type=date]::-webkit-clear-button {
-  display: none;
+.post button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+  border-bottom: 4px solid #122df3;
+  background: #122df3;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
 }
-.post input[type=date]::-webkit-inner-spin-button {
-  display: none;
-}
-.post input[type=date]::-webkit-calendar-picker-indicator {
-  color: #2c3e50;
-}
-.post input[type=date] {
-  appearance: none;
-  -webkit-appearance: none;
-  color: #f1fcfd;
-  font-family: "Helvetica", arial, sans-serif;
-  font-size: 18px;
-  border: 1px solid #ecf0f1;
-  background: #ffffff;
-  padding: 5px;
-  display: inline-block !important;
-  visibility: visible !important;
-}
-.post input[type=date], .post focus {
-  color: #95a5a6;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
+.post button:hover {
+  background: #2bc9d0;
 }
 
 .avatar {
@@ -695,4 +689,4 @@ nav .navLogo input::placeholder {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=styles.css.map */

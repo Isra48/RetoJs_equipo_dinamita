@@ -70,50 +70,59 @@
     font-weight: 500;
   }
 
-  #Autor,
-  #school {
+  #autor,
+  #titulo, #img {
     display: inline-block;
     padding: 15px;
     margin: 10px 0px;
     width: 49%;
     height: 20px;
     border: none;
-    border-radius: 20px;
-    background: #d0dfe8;
-  }
-  #Titulo {
-    display: inline-block;
-    padding: 15px;
-    margin: 5px auto;
-    width: 99%;
-    height: 20px;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    background: #d0dfe8;
-  }
-  #text-post {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;  }
+
+  #parrafo {
     display: block;
+    font-size: 1em;
     width: 100%;
     padding: 15px;
     border: none;
     outline: none;
     resize: none;
   }
+ /* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
 
-  button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    border-radius: 20px;
-    border: none;
-    border-bottom: 4px solid #122df3;
-    background: #122df3;
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
-  }
-  button:hover {
-    background: #2bc9d0;
-  }
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+  display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #2c3e50;
+}
+
+
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  color: #f1fcfd;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 18px;
+  border:1px solid #ecf0f1;
+  background:#ffffff;
+  padding:5px;
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+input[type="date"], focus {
+  color: #95a5a6;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
 }

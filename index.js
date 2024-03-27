@@ -12,6 +12,7 @@ const autorValue = document.getElementById('autor').value;
 const tituloValue = document.getElementById('titulo').value;
 const parrafoValue = document.getElementById('parrafo').value;
 const imgValue = document.getElementById('img').value;
+const fechaValue = document.getElementById('date').value;
 
 
 //////acciones al dar click
@@ -34,7 +35,8 @@ if (!localStorageData) {
                 autor: autorValue,
                 titulo: tituloValue,
                 parrafo: parrafoValue,
-                img: imgValue
+                img: imgValue,
+                date: fechaValue
             }
 
             console.log( post)
